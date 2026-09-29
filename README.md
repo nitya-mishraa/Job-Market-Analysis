@@ -42,17 +42,24 @@ To identify:
 4. **Visualization** — Built an interactive Power BI dashboard with KPI cards, bar charts, maps, and donut charts
 
 ## 📂 Project Structure
-job-market-analysis/
-├── data_raw/ # Raw scraped data (CSV)
-├── data_cleaned/ # Cleaned datasets (jobs + skills long-format)
-├── sql_queries/ # SQLite database + SQL analysis queries
-├── powerbi_dashboard/ # Power BI (.pbix) file + dashboard screenshot
-├── scrape_jobs.py # Web scraping script (Selenium)
-├── clean_data.py # Data cleaning & transformation script
-├── create_database.py # SQLite database creation script
-├── run_sql_query.py # SQL query execution script
-└── README.md
 
+```
+job-market-analysis/
+├── data_cleaned/         # Cleaned datasets (jobs + skills long-format)
+├── sql_queries/           # SQLite database + SQL analysis queries
+├── job_analysis.pbix       # Power BI dashboard file
+├── dashboard_preview.png   # Dashboard screenshot
+├── scrape_jobs.py           # Web scraping script (Selenium)
+├── clean_data.py            # Data cleaning & transformation script
+├── create_database.py       # SQLite database creation script
+├── run_sql_query.py         # SQL query execution script
+├── sql_queries.sql          # Saved SQL queries (documentation)
+└── README.md
+```
+
+## 📷 Dashboard Preview
+
+![Dashboard Preview](dashboard_preview.png)
 
 ## 🚀 How to Run This Project
 1. Clone this repository:
@@ -69,7 +76,7 @@ python clean_data.py
 python create_database.py
 python run_sql_query.py
 
-4. Open `powerbi_dashboard/job_market_dashboard.pbix` in Power BI Desktop to explore the interactive dashboard
+4. Open `job_analysis.pbix` in Power BI Desktop to explore the interactive dashboard
 
 ## 📌 Future Improvements
 - Expand dataset to 1000+ listings for deeper statistical significance
